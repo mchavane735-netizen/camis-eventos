@@ -1,0 +1,1811 @@
+[
+{
+"codigo": "PROD-001",
+"nome": "2M em Lata",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-002",
+"nome": "2M em Garrafa P",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 80.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-003",
+"nome": "Manica em Garrafa P",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-004",
+"nome": "Txilar em Lata",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-005",
+"nome": "Txilar em Garrafa P",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 80.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-006",
+"nome": "Brutal em Garrafa P",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-007",
+"nome": "Brutal em Lata",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-008",
+"nome": "Lite em Lata",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 80.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-009",
+"nome": "Lite em Garrafa P",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-010",
+"nome": "Heineken em Lata",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-011",
+"nome": "Manica em Lata",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-012",
+"nome": "Heineken em Garrafa P",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-013",
+"nome": "Laurentina em Lata",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-014",
+"nome": "Laurentina em Garrafa P",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 80.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-015",
+"nome": "SuperBok em Lata",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-016",
+"nome": "Superbok em Garrafa P",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-017",
+"nome": "Coronita",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-018",
+"nome": "Savana de Limão",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-019",
+"nome": "Savana Dry",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-020",
+"nome": "Hunters Gold",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-021",
+"nome": "Hunters Dry",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-022",
+"nome": "SPIN",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 90.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-023",
+"nome": "Stella",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-024",
+"nome": "Strong Bow",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-025",
+"nome": "Breezer",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-026",
+"nome": "Flying Fish",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-027",
+"nome": "Champanhe em Lata P sem álcool",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-028",
+"nome": "Champanhe com Álcool G",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 400.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-029",
+"nome": "Champanhe sem Álcool G",
+"categoria": "Cerveja",
+"tipo": "Bebida",
+"preco": 500.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-030",
+"nome": "Jamson",
+"categoria": "Wisk",
+"tipo": "Bebida",
+"preco": 1800.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-031",
+"nome": "Martin",
+"categoria": "Wisk",
+"tipo": "Bebida",
+"preco": 2000.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-032",
+"nome": "Black Lable",
+"categoria": "Wisk",
+"tipo": "Bebida",
+"preco": 1800.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-033",
+"nome": "Red Lable",
+"categoria": "Wisk",
+"tipo": "Bebida",
+"preco": 1700.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-034",
+"nome": "Chivas Regal",
+"categoria": "Wisk",
+"tipo": "Bebida",
+"preco": 1800.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-035",
+"nome": "Jack Danels",
+"categoria": "Wisk",
+"tipo": "Bebida",
+"preco": 2100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-036",
+"nome": "Gordon Gin",
+"categoria": "Wisk",
+"tipo": "Bebida",
+"preco": 2000.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-037",
+"nome": "Castelo",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2000.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-038",
+"nome": "Quinta Selvagem",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-039",
+"nome": "Dom Pasto",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2000.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-040",
+"nome": "Quinta das Larangeiras",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-041",
+"nome": "Maria de Santar",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2250.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-042",
+"nome": "Ramirana",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2300.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-043",
+"nome": "Pinto Grigo",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-044",
+"nome": "Noberega",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2500.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-045",
+"nome": "Gatão",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2400.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-046",
+"nome": "Casal Garcia",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2300.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-047",
+"nome": "Monte Carlos",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-048",
+"nome": "Quinta Branca",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2500.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-049",
+"nome": "Castelo Barba",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2200.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-050",
+"nome": "Duas Quintas",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 1900.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-051",
+"nome": "Laceira",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 1900.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-052",
+"nome": "Bridão",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2450.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-053",
+"nome": "Pouca Roupa",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2500.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-054",
+"nome": "Dom Martinho",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2300.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-055",
+"nome": "Arca Nova",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-056",
+"nome": "2020 Mariana",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2000.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-057",
+"nome": "Tutular",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-058",
+"nome": "Trava lingua",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2600.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-059",
+"nome": "Abraçados",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 2500.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-060",
+"nome": "Pata Negra",
+"categoria": "Vinho",
+"tipo": "Bebida",
+"preco": 1750.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-061",
+"nome": "Coca-Cola em Lata",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 50.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-062",
+"nome": "Coca-Cola Peti",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 35.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-063",
+"nome": "Sumo Cappy em Lata",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 60.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-064",
+"nome": "Sumo Cappy Peti",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 40.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-065",
+"nome": "Compal G",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-066",
+"nome": "Compal M",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-067",
+"nome": "Compal P",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 45.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-068",
+"nome": "Ceres G",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-069",
+"nome": "Ceres M",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-070",
+"nome": "Ceres P",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 45.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-071",
+"nome": "Santal G",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-072",
+"nome": "Santal M",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-073",
+"nome": "Santal P",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 45.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-074",
+"nome": "Fruit Cana 500ml",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 70.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-075",
+"nome": "Vinute em Lata",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 60.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-076",
+"nome": "Mirinda em Lata",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 60.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-077",
+"nome": "Mirinda Peti",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 50.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-078",
+"nome": "Pepsi em Lata",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 50.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-079",
+"nome": "Pepsi Peti",
+"categoria": "Bebida Doce",
+"tipo": "Bebida",
+"preco": 40.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-080",
+"nome": "Água Vumba G",
+"categoria": "Água",
+"tipo": "Bebida",
+"preco": 70.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-081",
+"nome": "Água Vunba P",
+"categoria": "Água",
+"tipo": "Bebida",
+"preco": 30.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-082",
+"nome": "Água Vengo G",
+"categoria": "Água",
+"tipo": "Bebida",
+"preco": 60.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-083",
+"nome": "Água Vengo P",
+"categoria": "Água",
+"tipo": "Bebida",
+"preco": 30.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-084",
+"nome": "Água Bonaqua G",
+"categoria": "Água",
+"tipo": "Bebida",
+"preco": 60.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-085",
+"nome": "Água Bonaqua P",
+"categoria": "Água",
+"tipo": "Bebida",
+"preco": 30.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-086",
+"nome": "Pin pop",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 10.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-087",
+"nome": "Yogi Choco",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 10.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-088",
+"nome": "Yogueta",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 10.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-089",
+"nome": "Mentol",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 2.5,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-090",
+"nome": "Caramelo",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 2.5,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-091",
+"nome": "Chocolate Cadburry G",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-092",
+"nome": "Chocolate Cadburry P",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-093",
+"nome": "Picoca L",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 50.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-094",
+"nome": "Picoca XL",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 75.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-095",
+"nome": "Pipoca XXL",
+"categoria": "Embalado",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-096",
+"nome": "Simba 25g",
+"categoria": "Chips",
+"tipo": "Bebida",
+"preco": 30.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-097",
+"nome": "Simba 50g",
+"categoria": "Chips",
+"tipo": "Bebida",
+"preco": 70.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-098",
+"nome": "Lays 23g",
+"categoria": "Chips",
+"tipo": "Bebida",
+"preco": 40.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-099",
+"nome": "Lays 50g",
+"categoria": "Chips",
+"tipo": "Bebida",
+"preco": 80.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-100",
+"nome": "Bon Bon",
+"categoria": "Chips",
+"tipo": "Bebida",
+"preco": 20.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-101",
+"nome": "Chá simples",
+"categoria": "Bebida Quente",
+"tipo": "Bebida",
+"preco": 50.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-102",
+"nome": "Chá com leite",
+"categoria": "Bebida Quente",
+"tipo": "Bebida",
+"preco": 150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-103",
+"nome": "Chá de maçã",
+"categoria": "Bebida Quente",
+"tipo": "Bebida",
+"preco": 150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-104",
+"nome": "Café Ricoffy simples",
+"categoria": "Bebida Quente",
+"tipo": "Bebida",
+"preco": 70.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-105",
+"nome": "Café com Leite",
+"categoria": "Bebida Quente",
+"tipo": "Bebida",
+"preco": 150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-106",
+"nome": "Café Delta Curto",
+"categoria": "Bebida Quente",
+"tipo": "Bebida",
+"preco": 100.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-107",
+"nome": "Café Delta Longo",
+"categoria": "Bebida Quente",
+"tipo": "Bebida",
+"preco": 230.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-108",
+"nome": "Chocolate quente",
+"categoria": "Bebida Quente",
+"tipo": "Bebida",
+"preco": 150.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-109",
+"nome": "Milo",
+"categoria": "Bebida Quente",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-110",
+"nome": "Red Bull",
+"categoria": "Energético",
+"tipo": "Bebida",
+"preco": 120.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-111",
+"nome": "Água Tónica (Shwepps)",
+"categoria": "Misturador",
+"tipo": "Bebida",
+"preco": 60.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-112",
+"nome": "Ginger (Shwepps)",
+"categoria": "Misturador",
+"tipo": "Bebida",
+"preco": 60.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-113",
+"nome": "Dry Lemon",
+"categoria": "Misturador",
+"tipo": "Bebida",
+"preco": 60.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-114",
+"nome": "Frozy Dragon",
+"categoria": "Refrigerante",
+"tipo": "Bebida",
+"preco": 90.0,
+"estoqueMin": 10,
+"estoqueAtual": 50
+},
+{
+"codigo": "PROD-115",
+"nome": "Frango Inteiro (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 1000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-116",
+"nome": "1/4 de Frango (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 300.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-117",
+"nome": "1/2 Frango (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 600.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-118",
+"nome": "Galinha Cafreal inteiro (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 900.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-119",
+"nome": "1/4 de Galinha Cafreal (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 300.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-120",
+"nome": "1/2 de Calinga Cafreal (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 450.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-121",
+"nome": "Galinha a Zambeziana Inteira (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 1400.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-122",
+"nome": "1/4 Galinha a Zambeziana (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 400.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-123",
+"nome": "1/2 Galinha a Zambeziana (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 800.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-124",
+"nome": "Codornizes (2 Unidades) (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 750.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-125",
+"nome": "Codornizes (4 Unidades) (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 1450.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-126",
+"nome": "Pato Inteiro (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 1400.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-127",
+"nome": "1/4 de Pato (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 400.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-128",
+"nome": "1/2 Pato (c/ Chima/batata/arroz/salada)",
+"categoria": "Aves",
+"tipo": "Refeição",
+"preco": 800.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-129",
+"nome": "Lulas Grelhadas (c/ Chima/batata/arroz/salada)",
+"categoria": "Mariscos",
+"tipo": "Refeição",
+"preco": 600.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-130",
+"nome": "Lulas Panadas (c/ Chima/batata/arroz/salada)",
+"categoria": "Mariscos",
+"tipo": "Refeição",
+"preco": 700.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-131",
+"nome": "Lagostas",
+"categoria": "Mariscos",
+"tipo": "Refeição",
+"preco": 1500.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-132",
+"nome": "Camarão Grelhado",
+"categoria": "Mariscos",
+"tipo": "Refeição",
+"preco": 1450.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-133",
+"nome": "Caril de Coco com camarão",
+"categoria": "Mariscos",
+"tipo": "Refeição",
+"preco": 500.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-134",
+"nome": "Peixe Vermelho (c/ Chima/batata/arroz/salada)",
+"categoria": "Peixe",
+"tipo": "Refeição",
+"preco": 1000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-135",
+"nome": "Peixe Pedra (c/ Chima/batata/arroz/salada)",
+"categoria": "Peixe",
+"tipo": "Refeição",
+"preco": 1100.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-136",
+"nome": "Peixe Garoupa (c/ Chima/batata/arroz/salada)",
+"categoria": "Peixe",
+"tipo": "Refeição",
+"preco": 1200.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-137",
+"nome": "Corvina (c/ Chima/batata/arroz/salada)",
+"categoria": "Peixe",
+"tipo": "Refeição",
+"preco": 500.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-138",
+"nome": "Peixe Tilápia/Pende/Chicamba (c/ Chima/batata/arroz/salada)",
+"categoria": "Peixe",
+"tipo": "Refeição",
+"preco": 750.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-139",
+"nome": "Sopa de Legumes/feijão",
+"categoria": "Petisco",
+"tipo": "Refeição",
+"preco": 160.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-140",
+"nome": "Mutxutxu de Dobrada",
+"categoria": "Petisco",
+"tipo": "Refeição",
+"preco": 200.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-141",
+"nome": "Mutxutxu de cabeça",
+"categoria": "Petisco",
+"tipo": "Refeição",
+"preco": 200.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-142",
+"nome": "Petisco de Lula",
+"categoria": "Petisco",
+"tipo": "Refeição",
+"preco": 250.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-143",
+"nome": "Dose de Batata frita",
+"categoria": "Extra",
+"tipo": "Refeição",
+"preco": 80.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-144",
+"nome": "Dose de Arroz simples/de côco",
+"categoria": "Extra",
+"tipo": "Refeição",
+"preco": 80.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-145",
+"nome": "Dose de Arroz de Legumes",
+"categoria": "Extra",
+"tipo": "Refeição",
+"preco": 100.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-146",
+"nome": "Dose de Chima",
+"categoria": "Extra",
+"tipo": "Refeição",
+"preco": 80.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-147",
+"nome": "Dose de Purê de Batata",
+"categoria": "Extra",
+"tipo": "Refeição",
+"preco": 100.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-148",
+"nome": "Dose de Saladas",
+"categoria": "Extra",
+"tipo": "Refeição",
+"preco": 80.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-149",
+"nome": "Esparguete com peito de frango",
+"categoria": "Massa",
+"tipo": "Refeição",
+"preco": 500.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-150",
+"nome": "Cotovelo com camarão",
+"categoria": "Massa",
+"tipo": "Refeição",
+"preco": 700.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-151",
+"nome": "Sandes de ovo",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 50.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-152",
+"nome": "Sandes de Atum",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 60.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-153",
+"nome": "Sandes de Queijo",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 50.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-154",
+"nome": "Sandes de Palone",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 50.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-155",
+"nome": "Sandes de Choriço",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 80.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-156",
+"nome": "Sandes Mista",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 140.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-157",
+"nome": "Ambúrguer simples",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 120.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-158",
+"nome": "Ambúrguer com Queijo",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 150.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-159",
+"nome": "Ambúrguer com Ovo",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 150.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-160",
+"nome": "Ambúrguer com Queijo e Ovo",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 200.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-161",
+"nome": "Amburguer Completo (Com Batata)",
+"categoria": "Salgado",
+"tipo": "Refeição",
+"preco": 250.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-162",
+"nome": "Porco (1kg) (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 600.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-163",
+"nome": "Vaca (1kg) (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 600.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-164",
+"nome": "Tibone (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 900.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-165",
+"nome": "Bife a Portuguesa (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 950.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-166",
+"nome": "Bife Trinchado (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 900.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-167",
+"nome": "Bife com Natas (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 950.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-168",
+"nome": "Bife no Forno (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 1000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-169",
+"nome": "Entrecosto Assado (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 900.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-170",
+"nome": "Fiambre de Porco (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 850.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-171",
+"nome": "Costeleta de Porco (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 850.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-172",
+"nome": "Picanha (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 1000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-173",
+"nome": "Combo de Carnes (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 1800.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-174",
+"nome": "Combo de Mariscos (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 1950.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-175",
+"nome": "Espetada Mista de Carne (c/ Chima/arroz/batata/salada)",
+"categoria": "Carne",
+"tipo": "Refeição",
+"preco": 800.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-176",
+"nome": "Chamussas (4 Unidades)",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 150.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-177",
+"nome": "Rissóis (4 Unidades)",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 160.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-178",
+"nome": "Cochinhos (4 Unidades)",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 180.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-179",
+"nome": "Spring Rolls (4 Unidades)",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 200.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-180",
+"nome": "Pão de Alho",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 160.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-181",
+"nome": "Bolo de Natas",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 80.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-182",
+"nome": "Brigadeiros",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 40.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-183",
+"nome": "Tranças",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 60.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-184",
+"nome": "Bola de Berlim",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 60.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-185",
+"nome": "Arofada doce",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 40.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-186",
+"nome": "Bolo de Arroz",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 70.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-187",
+"nome": "Paozinhos de Leite",
+"categoria": "Entrada",
+"tipo": "Refeição",
+"preco": 50.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-188",
+"nome": "Entrada Piscina - Adulto",
+"categoria": "Piscina",
+"tipo": "Serviço",
+"preco": 250.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-189",
+"nome": "Entrada Piscina - Criança",
+"categoria": "Piscina",
+"tipo": "Serviço",
+"preco": 150.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-190",
+"nome": "Escorrega",
+"categoria": "Parque",
+"tipo": "Serviço",
+"preco": 100.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-191",
+"nome": "Baloiço",
+"categoria": "Parque",
+"tipo": "Serviço",
+"preco": 100.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-192",
+"nome": "Balança",
+"categoria": "Parque",
+"tipo": "Serviço",
+"preco": 100.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-193",
+"nome": "Pula-pula",
+"categoria": "Parque",
+"tipo": "Serviço",
+"preco": 100.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-194",
+"nome": "Aluguer Salão - 25 pessoas",
+"categoria": "Salão",
+"tipo": "Serviço",
+"preco": 25000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-195",
+"nome": "Aluguer Salão - 26-50 pessoas",
+"categoria": "Salão",
+"tipo": "Serviço",
+"preco": 45000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-196",
+"nome": "Aluguer Salão - 51-100 pessoas",
+"categoria": "Salão",
+"tipo": "Serviço",
+"preco": 80000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-197",
+"nome": "Aluguer Salão - 101-125 pessoas",
+"categoria": "Salão",
+"tipo": "Serviço",
+"preco": 93750.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-198",
+"nome": "Aluguer Salão - 126-150 pessoas",
+"categoria": "Salão",
+"tipo": "Serviço",
+"preco": 105000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-199",
+"nome": "Aluguer Salão - 151-175 pessoas",
+"categoria": "Salão",
+"tipo": "Serviço",
+"preco": 113750.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-200",
+"nome": "Aluguer Salão - 176-200 pessoas",
+"categoria": "Salão",
+"tipo": "Serviço",
+"preco": 120000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+},
+{
+"codigo": "PROD-201",
+"nome": "Aluguer Salão - 201-225 pessoas",
+"categoria": "Salão",
+"tipo": "Serviço",
+"preco": 135000.0,
+"estoqueMin": 5,
+"estoqueAtual": 20
+}
+]
