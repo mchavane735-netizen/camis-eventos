@@ -1,0 +1,9 @@
+DEPLOY PRONTO — CAMI'S EVENTOS (sistema ja compilado)
+
+1. No GitHub (camis-eventos): abra o Dockerfile, lapis, apague tudo
+   e cole o conteudo do Dockerfile desta pasta. Commit.
+2. Se existir o ficheiro .dockerignore no repositorio, APAGUE-O
+   (icone do caixote) — ele esconderia a pasta dist.
+3. Add file > Upload files > ARRASTE a pasta dist para a area de
+   upload. Aguarde (sao ~300 ficheiros). Commit.
+4. A Railway constroi em segundos e o deployment fica verde.
