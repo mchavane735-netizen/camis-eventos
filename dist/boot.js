@@ -18355,7 +18355,7 @@ var require_lib = __commonJS({
     var hasOwnProperty = Object.prototype.hasOwnProperty;
     var isRecord = (value) => typeof value === "object" && value !== null && !Array.isArray(value) && !(value instanceof Set) && !(value instanceof Map);
     var isWordChar = (code) => code >= 65 && code <= 90 || code >= 97 && code <= 122 || code >= 48 && code <= 57 || code === 95;
-    var isWhitespace = (code) => code === charCode.space || code === charCode.tab || code === charCode.newline || code === charCode.carriageReturn;
+    var isWhitespace2 = (code) => code === charCode.space || code === charCode.tab || code === charCode.newline || code === charCode.carriageReturn;
     var toLower = (code) => code | 32;
     var matchesWord = (sql2, position, word, length) => {
       const wordLength = word.length;
@@ -18436,7 +18436,7 @@ var require_lib = __commonJS({
             continue;
           }
         }
-        if (isWhitespace(code)) {
+        if (isWhitespace2(code)) {
           i++;
           continue;
         }
@@ -18503,7 +18503,7 @@ var require_lib = __commonJS({
           return position + 3;
         if (lower === 107 && matchesWord(sql2, position, "key", length)) {
           let cursor = position + 3;
-          while (cursor < length && isWhitespace(sql2.charCodeAt(cursor)))
+          while (cursor < length && isWhitespace2(sql2.charCodeAt(cursor)))
             cursor++;
           if (matchesWord(sql2, cursor, "update", length))
             return cursor + 6;
@@ -18753,7 +18753,7 @@ var require_lib = __commonJS({
           const expandable = !(Array.isArray(currentValue) || currentValue instanceof Uint8Array || currentValue instanceof Date || hasSqlString(currentValue) || isDate2(currentValue)) && (isRecord(currentValue) || currentValue instanceof Map);
           if (expandable) {
             let previous = placeholderPosition - 1;
-            while (previous >= chunkIndex && isWhitespace(sql2.charCodeAt(previous)))
+            while (previous >= chunkIndex && isWhitespace2(sql2.charCodeAt(previous)))
               previous--;
             const previousChar = previous >= chunkIndex ? toLower(sql2.charCodeAt(previous)) : 0;
             if ((previousChar < 97 || previousChar > 122) && previousChar !== charCode.comma)
@@ -45598,11 +45598,11 @@ import { createReadStream, statSync, existsSync } from "fs";
 import { join } from "path";
 import { versions } from "process";
 import { Readable as Readable2 } from "stream";
-var COMPRESSIBLE_CONTENT_TYPE_REGEX, ENCODINGS, ENCODINGS_ORDERED_KEYS, pr54206Applied, useReadableToWeb, createStreamBody, getStats, tryDecode2, tryDecodeURI2, serveStatic;
+var COMPRESSIBLE_CONTENT_TYPE_REGEX2, ENCODINGS, ENCODINGS_ORDERED_KEYS, pr54206Applied, useReadableToWeb, createStreamBody, getStats, tryDecode2, tryDecodeURI2, serveStatic;
 var init_serve_static = __esm({
   "node_modules/@hono/node-server/dist/serve-static.mjs"() {
     init_mime();
-    COMPRESSIBLE_CONTENT_TYPE_REGEX = /^\s*(?:text\/[^;\s]+|application\/(?:javascript|json|xml|xml-dtd|ecmascript|dart|postscript|rtf|tar|toml|vnd\.dart|vnd\.ms-fontobject|vnd\.ms-opentype|wasm|x-httpd-php|x-javascript|x-ns-proxy-autoconfig|x-sh|x-tar|x-virtualbox-hdd|x-virtualbox-ova|x-virtualbox-ovf|x-virtualbox-vbox|x-virtualbox-vdi|x-virtualbox-vhd|x-virtualbox-vmdk|x-www-form-urlencoded)|font\/(?:otf|ttf)|image\/(?:bmp|vnd\.adobe\.photoshop|vnd\.microsoft\.icon|vnd\.ms-dds|x-icon|x-ms-bmp)|message\/rfc822|model\/gltf-binary|x-shader\/x-fragment|x-shader\/x-vertex|[^;\s]+?\+(?:json|text|xml|yaml))(?:[;\s]|$)/i;
+    COMPRESSIBLE_CONTENT_TYPE_REGEX2 = /^\s*(?:text\/[^;\s]+|application\/(?:javascript|json|xml|xml-dtd|ecmascript|dart|postscript|rtf|tar|toml|vnd\.dart|vnd\.ms-fontobject|vnd\.ms-opentype|wasm|x-httpd-php|x-javascript|x-ns-proxy-autoconfig|x-sh|x-tar|x-virtualbox-hdd|x-virtualbox-ova|x-virtualbox-ovf|x-virtualbox-vbox|x-virtualbox-vdi|x-virtualbox-vhd|x-virtualbox-vmdk|x-www-form-urlencoded)|font\/(?:otf|ttf)|image\/(?:bmp|vnd\.adobe\.photoshop|vnd\.microsoft\.icon|vnd\.ms-dds|x-icon|x-ms-bmp)|message\/rfc822|model\/gltf-binary|x-shader\/x-fragment|x-shader\/x-vertex|[^;\s]+?\+(?:json|text|xml|yaml))(?:[;\s]|$)/i;
     ENCODINGS = {
       br: ".br",
       zstd: ".zst",
@@ -45698,7 +45698,7 @@ var init_serve_static = __esm({
         }
         const mimeType = getMimeType(path2);
         c.header("Content-Type", mimeType || "application/octet-stream");
-        if (options.precompressed && (!mimeType || COMPRESSIBLE_CONTENT_TYPE_REGEX.test(mimeType))) {
+        if (options.precompressed && (!mimeType || COMPRESSIBLE_CONTENT_TYPE_REGEX2.test(mimeType))) {
           const acceptEncodingSet = new Set(
             c.req.header("Accept-Encoding")?.split(",").map((encoding) => encoding.trim())
           );
@@ -45757,6 +45757,14 @@ import fs from "fs";
 import path from "path";
 function serveStaticFiles(app2) {
   const distPath = path.resolve(import.meta.dirname, "../dist/public");
+  app2.use("*", async (c, next) => {
+    const p = c.req.path;
+    if (p.startsWith("/assets/")) c.header("Cache-Control", "public, max-age=31536000, immutable");
+    else if (p.startsWith("/fotos/") || p.startsWith("/icons/")) c.header("Cache-Control", "public, max-age=604800");
+    else if (p.startsWith("/produtos/")) c.header("Cache-Control", "public, max-age=86400");
+    else if (p === "/" || p === "/index.html" || p === "/sw.js" || p === "/manifest.json") c.header("Cache-Control", "no-cache");
+    await next();
+  });
   app2.use("*", serveStatic({ root: "./dist/public" }));
   app2.notFound((c) => {
     const accept = c.req.header("accept") ?? "";
@@ -45765,7 +45773,9 @@ function serveStaticFiles(app2) {
     }
     const indexPath = path.resolve(distPath, "index.html");
     const content = fs.readFileSync(indexPath, "utf-8");
-    return c.html(content);
+    const res = c.html(content);
+    res.headers.set("Cache-Control", "no-cache");
+    return res;
   });
 }
 var init_vite = __esm({
@@ -48302,6 +48312,294 @@ var bodyLimit = (options) => {
     c.req.raw = new Request(c.req.raw, requestInit);
     return next();
   };
+};
+
+// node_modules/hono/dist/utils/accept.js
+var isWhitespace = (char2) => char2 === 32 || char2 === 9 || char2 === 10 || char2 === 13;
+var consumeWhitespace = (acceptHeader, startIndex) => {
+  while (startIndex < acceptHeader.length) {
+    if (!isWhitespace(acceptHeader.charCodeAt(startIndex))) {
+      break;
+    }
+    startIndex++;
+  }
+  return startIndex;
+};
+var ignoreTrailingWhitespace = (acceptHeader, startIndex) => {
+  while (startIndex > 0) {
+    if (!isWhitespace(acceptHeader.charCodeAt(startIndex - 1))) {
+      break;
+    }
+    startIndex--;
+  }
+  return startIndex;
+};
+var skipInvalidParam = (acceptHeader, startIndex) => {
+  while (startIndex < acceptHeader.length) {
+    const char2 = acceptHeader.charCodeAt(startIndex);
+    if (char2 === 59) {
+      return [startIndex + 1, true];
+    }
+    if (char2 === 44) {
+      return [startIndex + 1, false];
+    }
+    startIndex++;
+  }
+  return [startIndex, false];
+};
+var skipInvalidAcceptValue = (acceptHeader, startIndex) => {
+  let i = startIndex;
+  let inQuotes = false;
+  while (i < acceptHeader.length) {
+    const char2 = acceptHeader.charCodeAt(i);
+    if (inQuotes && char2 === 92) {
+      i++;
+    } else if (char2 === 34) {
+      inQuotes = !inQuotes;
+    } else if (!inQuotes && char2 === 44) {
+      return i + 1;
+    }
+    i++;
+  }
+  return i;
+};
+var getNextParam = (acceptHeader, startIndex) => {
+  startIndex = consumeWhitespace(acceptHeader, startIndex);
+  let i = startIndex;
+  let key;
+  let value;
+  let hasNext = false;
+  while (i < acceptHeader.length) {
+    const char2 = acceptHeader.charCodeAt(i);
+    if (char2 === 61) {
+      key = acceptHeader.slice(startIndex, ignoreTrailingWhitespace(acceptHeader, i));
+      i++;
+      break;
+    }
+    if (char2 === 59) {
+      return [i + 1, void 0, void 0, true];
+    }
+    if (char2 === 44) {
+      return [i + 1, void 0, void 0, false];
+    }
+    i++;
+  }
+  if (key === void 0) {
+    return [i, void 0, void 0, false];
+  }
+  i = consumeWhitespace(acceptHeader, i);
+  if (acceptHeader.charCodeAt(i) === 61) {
+    const skipResult = skipInvalidParam(acceptHeader, i + 1);
+    return [skipResult[0], key, void 0, skipResult[1]];
+  }
+  let inQuotes = false;
+  const paramStartIndex = i;
+  while (i < acceptHeader.length) {
+    const char2 = acceptHeader.charCodeAt(i);
+    if (inQuotes && char2 === 92) {
+      i++;
+    } else if (char2 === 34) {
+      if (inQuotes) {
+        let nextIndex = consumeWhitespace(acceptHeader, i + 1);
+        const nextChar = acceptHeader.charCodeAt(nextIndex);
+        if (nextIndex < acceptHeader.length && !(nextChar === 59 || nextChar === 44)) {
+          const skipResult = skipInvalidParam(acceptHeader, nextIndex);
+          return [skipResult[0], key, void 0, skipResult[1]];
+        }
+        value = acceptHeader.slice(paramStartIndex + 1, i);
+        if (value.includes("\\")) {
+          value = value.replace(/\\(.)/g, "$1");
+        }
+        if (nextChar === 44) {
+          return [nextIndex + 1, key, value, false];
+        }
+        if (nextChar === 59) {
+          hasNext = true;
+          nextIndex++;
+        }
+        i = nextIndex;
+        break;
+      }
+      inQuotes = true;
+    } else if (!inQuotes && (char2 === 59 || char2 === 44)) {
+      value = acceptHeader.slice(paramStartIndex, ignoreTrailingWhitespace(acceptHeader, i));
+      if (char2 === 59) {
+        hasNext = true;
+      }
+      i++;
+      break;
+    }
+    i++;
+  }
+  return [
+    i,
+    key,
+    value ?? acceptHeader.slice(paramStartIndex, ignoreTrailingWhitespace(acceptHeader, i)),
+    hasNext
+  ];
+};
+var getNextAcceptValue = (acceptHeader, startIndex) => {
+  const accept = {
+    type: "",
+    params: /* @__PURE__ */ Object.create(null),
+    q: 1
+  };
+  startIndex = consumeWhitespace(acceptHeader, startIndex);
+  let i = startIndex;
+  while (i < acceptHeader.length) {
+    const char2 = acceptHeader.charCodeAt(i);
+    if (char2 === 59 || char2 === 44) {
+      accept.type = acceptHeader.slice(startIndex, ignoreTrailingWhitespace(acceptHeader, i));
+      i++;
+      if (char2 === 44) {
+        return [i, accept.type ? accept : void 0];
+      }
+      if (!accept.type) {
+        return [skipInvalidAcceptValue(acceptHeader, i), void 0];
+      }
+      break;
+    }
+    i++;
+  }
+  if (!accept.type) {
+    accept.type = acceptHeader.slice(
+      startIndex,
+      ignoreTrailingWhitespace(acceptHeader, acceptHeader.length)
+    );
+    return [acceptHeader.length, accept.type ? accept : void 0];
+  }
+  let param;
+  let value;
+  let hasNext;
+  while (i < acceptHeader.length) {
+    ;
+    [i, param, value, hasNext] = getNextParam(acceptHeader, i);
+    if (param && value) {
+      accept.params[param] = value;
+    }
+    if (!hasNext) {
+      break;
+    }
+  }
+  return [i, accept];
+};
+var parseAccept = (acceptHeader) => {
+  if (!acceptHeader) {
+    return [];
+  }
+  const values = [];
+  let i = 0;
+  let accept;
+  let requiresSort = false;
+  let lastAccept;
+  while (i < acceptHeader.length) {
+    ;
+    [i, accept] = getNextAcceptValue(acceptHeader, i);
+    if (accept) {
+      accept.q = parseQuality(accept.params.q);
+      values.push(accept);
+      if (lastAccept && lastAccept.q < accept.q) {
+        requiresSort = true;
+      }
+      lastAccept = accept;
+    }
+  }
+  if (requiresSort) {
+    values.sort((a, b) => b.q - a.q);
+  }
+  return values;
+};
+var parseQuality = (qVal) => {
+  if (qVal === void 0) {
+    return 1;
+  }
+  if (qVal === "") {
+    return 1;
+  }
+  if (qVal === "NaN") {
+    return 0;
+  }
+  const num = Number(qVal);
+  if (num === Infinity) {
+    return 1;
+  }
+  if (num === -Infinity) {
+    return 0;
+  }
+  if (Number.isNaN(num)) {
+    return 1;
+  }
+  if (num < 0 || num > 1) {
+    return 1;
+  }
+  return num;
+};
+
+// node_modules/hono/dist/utils/compress.js
+var COMPRESSIBLE_CONTENT_TYPE_REGEX = /^\s*(?:text\/(?!event-stream(?:[;\s]|$))[^;\s]+|application\/(?:javascript|json|xml|xml-dtd|ecmascript|dart|msgpack|postscript|rtf|tar|toml|vnd\.dart|vnd\.ms-fontobject|vnd\.ms-opentype|vnd\.msgpack|wasm|x-httpd-php|x-javascript|x-msgpack|x-ns-proxy-autoconfig|x-sh|x-tar|x-virtualbox-hdd|x-virtualbox-ova|x-virtualbox-ovf|x-virtualbox-vbox|x-virtualbox-vdi|x-virtualbox-vhd|x-virtualbox-vmdk|x-www-form-urlencoded)|font\/(?:otf|ttf)|image\/(?:bmp|vnd\.adobe\.photoshop|vnd\.microsoft\.icon|vnd\.ms-dds|x-icon|x-ms-bmp)|message\/rfc822|model\/gltf-binary|x-shader\/x-fragment|x-shader\/x-vertex|[^;\s]+?\+(?:json|text|xml|yaml|msgpack))(?:[;\s]|$)/i;
+
+// node_modules/hono/dist/middleware/compress/index.js
+var ENCODING_TYPES = ["gzip", "deflate"];
+var cacheControlNoTransformRegExp = /(?:^|,)\s*?no-transform\s*?(?:,|$)/i;
+var selectEncoding = (header, candidates) => {
+  if (header === void 0) {
+    return void 0;
+  }
+  const accepts = parseAccept(header);
+  const wildcardQ = accepts.find((a) => a.type === "*")?.q;
+  let best;
+  for (const enc of candidates) {
+    const explicit = accepts.find((a) => a.type.toLowerCase() === enc);
+    const q = explicit ? explicit.q : wildcardQ ?? 0;
+    if (q === 1) {
+      return enc;
+    } else if (q > 0 && (!best || q > best.q)) {
+      best = { encoding: enc, q };
+    }
+  }
+  return best?.encoding;
+};
+var compress = (options) => {
+  const threshold = options?.threshold ?? 1024;
+  const candidates = options?.encoding ? [options.encoding] : ENCODING_TYPES;
+  const contentTypeFilter = options?.contentTypeFilter ?? COMPRESSIBLE_CONTENT_TYPE_REGEX;
+  const shouldCompress = typeof contentTypeFilter === "function" ? (res) => {
+    const type = res.headers.get("Content-Type");
+    return type && contentTypeFilter(type);
+  } : (res) => {
+    const type = res.headers.get("Content-Type");
+    return type && contentTypeFilter.test(type);
+  };
+  return async function compress2(ctx, next) {
+    await next();
+    const contentLength = ctx.res.headers.get("Content-Length");
+    if (ctx.res.status === 206 || // partial content, Content-Range refers to the uncompressed bytes
+    ctx.res.headers.has("Content-Encoding") || // already encoded
+    ctx.res.headers.has("Transfer-Encoding") || // already encoded or chunked
+    ctx.req.method === "HEAD" || // HEAD request
+    contentLength && Number(contentLength) < threshold || // content-length below threshold
+    !shouldCompress(ctx.res) || // not compressible type
+    !shouldTransform(ctx.res)) {
+      return;
+    }
+    const accepted = ctx.req.header("Accept-Encoding");
+    const encoding = selectEncoding(accepted, candidates);
+    if (!encoding || !ctx.res.body) {
+      return;
+    }
+    const stream = new CompressionStream(encoding);
+    ctx.res = new Response(ctx.res.body.pipeThrough(stream), ctx.res);
+    ctx.res.headers.delete("Content-Length");
+    ctx.res.headers.set("Content-Encoding", encoding);
+    const etag = ctx.res.headers.get("ETag");
+    if (etag && !etag.startsWith("W/")) {
+      ctx.res.headers.set("ETag", `W/${etag}`);
+    }
+  };
+};
+var shouldTransform = (res) => {
+  const cacheControl = res.headers.get("Cache-Control");
+  return !cacheControl || !cacheControlNoTransformRegExp.test(cacheControl);
 };
 
 // node_modules/@trpc/server/dist/adapters/fetch/index.mjs
@@ -56721,6 +57019,7 @@ init_env();
 init_connection();
 var app = new Hono2();
 app.use(bodyLimit({ maxSize: 50 * 1024 * 1024 }));
+app.use(compress());
 app.use("/api/trpc/*", async (c) => {
   return fetchRequestHandler({
     endpoint: "/api/trpc",
