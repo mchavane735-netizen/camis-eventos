@@ -45806,8 +45806,11 @@ async function autoMigrate() {
       await db.execute(sql.raw(a));
       console.log("[auto-migrate] OK:", a.slice(0, 72));
     } catch (e) {
-      const msg = e?.message ?? "";
-      if (/duplicate|exists/i.test(msg)) continue;
+      const msg = `${e?.message ?? ""} ${e?.cause?.message ?? ""}`;
+      if (/duplicate|exists|already/i.test(msg)) {
+        console.log("[auto-migrate] j\xE1 existia (ok):", a.slice(0, 60));
+        continue;
+      }
       console.error("[auto-migrate] FALHOU:", a.slice(0, 72), "\u2014", msg.slice(0, 200));
     }
   }
