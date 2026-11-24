@@ -44548,6 +44548,12 @@ var init_schema2 = __esm({
       // ligação ao perfil de afiliado, se houver
       notas: varchar("notas", { length: 255 }),
       ativo: boolean4("ativo").notNull().default(true),
+      // situação do vínculo (v41): Ativo · Licença · Inativo (saída/abandono) · Outra
+      situacao: varchar("situacao", { length: 20 }).notNull().default("Ativo"),
+      situacaoDesde: varchar("situacao_desde", { length: 10 }),
+      // YYYY-MM-DD em que a situação começou
+      situacaoMotivo: varchar("situacao_motivo", { length: 255 }),
+      // motivo da saída/licença/outra
       criadoEm: timestamp("criado_em").notNull().defaultNow()
     });
     rhPresencas = mysqlTable(
@@ -46051,7 +46057,12 @@ var init_seed_auto = __esm({
       // v24 — Reserva Buffet: ligação da reserva ao pedido online de origem
       "ALTER TABLE reservas ADD online_id BIGINT UNSIGNED NULL",
       // v25 — desconto combinado na reserva (MZN)
-      "ALTER TABLE reservas ADD desconto DOUBLE NOT NULL DEFAULT 0"
+      "ALTER TABLE reservas ADD desconto DOUBLE NOT NULL DEFAULT 0",
+      // v41 — situação do trabalhador (Ativo · Licença · Inativo · Outra) com data e motivo
+      "ALTER TABLE trabalhadores ADD situacao VARCHAR(20) NOT NULL DEFAULT 'Ativo'",
+      "ALTER TABLE trabalhadores ADD situacao_desde VARCHAR(10) NULL",
+      "ALTER TABLE trabalhadores ADD situacao_motivo VARCHAR(255) NULL",
+      "UPDATE trabalhadores SET situacao = 'Inativo', situacao_desde = DATE_FORMAT(COALESCE(criado_em, NOW()), '%Y-%m-%d') WHERE ativo = 0 AND situacao = 'Ativo'"
     ];
     MENUS_CHEFE = [
       {
@@ -56299,7 +56310,7 @@ var rhRouter = createRouter({
     const p = await db.select({ id: rhPresencas.id }).from(rhPresencas).where(eq(rhPresencas.trabalhadorId, input.id)).limit(1);
     const g = await db.select({ id: rhSalarioPagamentos.id }).from(rhSalarioPagamentos).where(eq(rhSalarioPagamentos.trabalhadorId, input.id)).limit(1);
     if (p.length > 0 || g.length > 0) {
-      await db.update(trabalhadores).set({ ativo: false }).where(eq(trabalhadores.id, input.id));
+      await db.update(trabalhadores).set({ ativo: false, situacao: "Inativo", situacaoDesde: hojeMz(), situacaoMotivo: "Removido da lista activa (tinha registos)" }).where(eq(trabalhadores.id, input.id));
       return { ok: true, desactivado: true };
     }
     await db.delete(rhLicencas).where(eq(rhLicencas.trabalhadorId, input.id));
@@ -56308,7 +56319,27 @@ var rhRouter = createRouter({
   }),
   reactivarTrabalhador: publicQuery.input(external_exports.object({ usuarioId: external_exports.number().int().positive(), id: external_exports.number().int().positive() })).mutation(async ({ input }) => {
     await requireAdmin2(input.usuarioId);
-    await getDb().update(trabalhadores).set({ ativo: true }).where(eq(trabalhadores.id, input.id));
+    await getDb().update(trabalhadores).set({ ativo: true, situacao: "Ativo", situacaoDesde: hojeMz(), situacaoMotivo: null }).where(eq(trabalhadores.id, input.id));
+    return { ok: true };
+  }),
+  /** v41 — Situação do vínculo: Ativo · Licença · Inativo (saída/abandono) · Outra.
+      Inativo retira o trabalhador de presenças, salários e alertas (activo=false);
+      Licença e Outra mantêm-no activo mas sinalizado. Guarda data e motivo. */
+  setSituacao: publicQuery.input(external_exports.object({
+    usuarioId: external_exports.number().int().positive(),
+    id: external_exports.number().int().positive(),
+    situacao: external_exports.enum(["Ativo", "Licen\xE7a", "Inativo", "Outra"]),
+    motivo: external_exports.string().max(255).optional()
+  })).mutation(async ({ input }) => {
+    await requireAdmin2(input.usuarioId);
+    if ((input.situacao === "Inativo" || input.situacao === "Outra") && !(input.motivo ?? "").trim())
+      throw new TRPCError({ code: "BAD_REQUEST", message: "Para marcar como \xAB" + input.situacao + "\xBB \xE9 obrigat\xF3rio indicar o motivo (ex.: abandonou o servi\xE7o, pediu para sair, contrato terminado\u2026)." });
+    await getDb().update(trabalhadores).set({
+      situacao: input.situacao,
+      situacaoDesde: hojeMz(),
+      situacaoMotivo: input.situacao === "Ativo" ? null : (input.motivo ?? "").trim() || null,
+      ativo: input.situacao !== "Inativo"
+    }).where(eq(trabalhadores.id, input.id));
     return { ok: true };
   }),
   guardarLicenca: publicQuery.input(external_exports.object({
